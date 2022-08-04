@@ -1,10 +1,10 @@
 /* @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap'); */
 
 .as-form-container {
-    background-color: #0a5b88;
-    margin: 50px !important;
-    padding: 0 30px;
-    max-width: 100% !important;
+  background-color: #0a5b88;
+  margin: 50px !important;
+  padding: 0 30px;
+  max-width: 100% !important;
 }
 
 /* на сайте уже глобально включен шрифт Roboto */
@@ -13,181 +13,199 @@
 } */
 
 #as-form .row {
-    display: flex;
-    flex-direction: row;
-    /* justify-content: space-between; */
-    flex-wrap: wrap;
-    align-items: flex-start;
-    margin: 0 30px;
-    border-bottom: #365aab solid 2px;
+  display: flex;
+  flex-direction: row;
+  /* justify-content: space-between; */
+  flex-wrap: wrap;
+  align-items: flex-start;
+  margin: 0 30px;
+  border-bottom: #365aab solid 2px;
+}
+
+#as-form .bot-img {
+  width: 40px;
+  height: auto;
+  margin-right: 10px;
+}
+
+#as-form .wrap-bot {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+
+#as-form a {
+  display: flex;
+  align-items: center;
+  color: #04fcff;
 }
 
 #as-form .row-btn {
-    justify-content: center;
-    flex-wrap: nowrap;
+  justify-content: center;
+  flex-wrap: nowrap;
 }
 
 #as-form .row-last {
-    border-bottom: none;
+  border-bottom: none;
 }
 
 #as-form .wrap-text-input {
-    width: 33%;
+  width: 33%;
 }
 
 #as-form .wrap {
-    display: block;
-    padding: 20px;
+  display: block;
+  padding: 20px;
 }
 #as-form .wrap-toggle {
-    display: block;
-    padding: 20px;
-    width: 50%;
+  display: block;
+  padding: 20px;
+  width: 50%;
 }
 #as-form .wrap-radio-items {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
 #as-form .wrap-btn-add {
-    display: flex;
-    flex-direction: row;
+  display: flex;
+  flex-direction: row;
 }
-
 
 #as-form .as-input {
-    height: 35px;
-    width: 100%;
-    padding: 6px 12px;
-    border: 1px solid #ccc;
-    font-size: 14px;
-    border-radius: 5px;
-    text-align: left;
-    background-color: #DDDDDD !important;
-    color: #222222;
+  height: 35px;
+  width: 100%;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  border-radius: 5px;
+  text-align: left;
+  background-color: #dddddd !important;
+  color: #222222;
 }
 #as-form .as-input::placeholder {
-    color: #666666;
+  color: #666666;
 }
 /************/
 #as-form select:required:invalid {
-    color: #666666;
+  color: #666666;
 }
 #as-form option[value=""][disabled] {
-    display: none;
+  display: none;
 }
 #as-form option {
-    color: #222222;
+  color: #222222;
 }
 /*******************/
 #as-form .labels {
-    max-width: 100%;
-    margin-bottom: 5px;
-    font-weight: 500;
-    color: #C8C8C8;
-    margin-right: 5px;
+  max-width: 100%;
+  margin-bottom: 5px;
+  font-weight: 500;
+  color: #c8c8c8;
+  margin-right: 5px;
 }
 
 #as-form .red-star {
-    color: #ff0000;
+  color: #ff0000;
 }
 
-    /* отключение стрелок по умолчанию у инпута, но если у нкго стоит аттрибут readonly, то это не нужно */
+/* отключение стрелок по умолчанию у инпута, но если у нкго стоит аттрибут readonly, то это не нужно */
 input[type="number"]::-webkit-inner-spin-button,
 input[type="number"]::-webkit-outer-spin-button {
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    margin: 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  margin: 0;
 }
 input[type="number"] {
-    -moz-appearance: textfield;
+  -moz-appearance: textfield;
 }
 
 /* ------------график доставки по районам---------------- */
-.region::before{
-	color: #111111;
-	padding: 10px 20px;
-	margin-right: 10px;
-	border-radius: 50%;
-  }
+.region::before {
+  color: #111111;
+  padding: 10px 20px;
+  margin-right: 10px;
+  border-radius: 50%;
+}
 
 .region {
-	display: flex;
-	align-items: center;
-	color: #cecece;
-	font-size: 20px;
-	font-weight: 700;
-  }
+  display: flex;
+  align-items: center;
+  color: #cecece;
+  font-size: 20px;
+  font-weight: 700;
+}
 
 .region span {
-	font-weight: 300;
-  }
+  font-weight: 300;
+}
 
 .region-tern .region::before {
-	content: "1";
-	background-color: #996600;
+  content: "1";
+  background-color: #996600;
 }
 
 .region-pokr .region::before {
-	content: "2";
-	background-color: #ccf4cc;
+  content: "2";
+  background-color: #ccf4cc;
 }
 
 .region-saks .region::before {
-	content: "3";
-	background-color: #003399;
+  content: "3";
+  background-color: #003399;
 }
 
 .region-dovg .region::before {
-	content: "4";
-	background-color: #99ff66;
+  content: "4";
+  background-color: #99ff66;
 }
 
 .region-cent .region::before {
-	content: "5";
-	background-color: #cc9900;
+  content: "5";
+  background-color: #cc9900;
 }
 
 .region-met .region::before {
-	content: "6";
-	background-color: #ff794b;
+  content: "6";
+  background-color: #ff794b;
 }
 
 .region-ing .region::before {
-	content: "7";
-	background-color: #990000;
+  content: "7";
+  background-color: #990000;
 }
 
 @media (max-width: 768px) {
-    #as-form .row {
-        margin: 0 20px;
-    }
-    #as-form .wrap {
-        padding: 10px;
-    }
-    #as-form .row .wrap-text-input,
-    #as-form .row .wrap-toggle {
-        width: 50%;
-    }
+  #as-form .row {
+    margin: 0 20px;
+  }
+  #as-form .wrap {
+    padding: 10px;
+  }
+  #as-form .row .wrap-text-input,
+  #as-form .row .wrap-toggle {
+    width: 50%;
+  }
 }
 @media (max-width: 575px) {
-    #as-form .row {
-        margin: 0 10px;
-    }
-    #as-form .row .wrap,
-    #as-form .row .wrap-toggle {
-        width: 100%;
-        padding: 10px 0;
-    }
-    #as-form .row-btn.row-last .btn {
-        height: 35px;
-        padding: 0;
-    }
+  #as-form .row {
+    margin: 0 10px;
+  }
+  #as-form .row .wrap,
+  #as-form .row .wrap-toggle {
+    width: 100%;
+    padding: 10px 0;
+  }
+  #as-form .row-btn.row-last .btn {
+    height: 35px;
+    padding: 0;
+  }
 }
 @media (max-width: 375px) {
-    #as-form .row-btn .wrap {
-        width: 100%;
-    }
+  #as-form .row-btn .wrap {
+    width: 100%;
+  }
 }
