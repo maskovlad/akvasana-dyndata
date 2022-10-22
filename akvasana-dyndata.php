@@ -15,6 +15,7 @@ require "get-data.php";
 require "post-data.php";
 require "order-form.php";
 require "delivery.php";
+require "seo.php";
 
 // подключение стилей и скриптов
 add_action( 'wp_enqueue_scripts', 'as_scripts' );
