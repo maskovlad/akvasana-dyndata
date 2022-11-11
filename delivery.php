@@ -12,6 +12,8 @@ function show_delivery() {
     $cost        = $wpdb->get_col( null , 4 );
 
 
+    ob_start();
+
     foreach ( $id as $v ) {
         $v-- ;
     ?>
@@ -23,7 +25,9 @@ function show_delivery() {
             </div>
         </div>
     </div>
-    <?php } 
+    <?php }
+    
+    return ob_get_clean();
 }
 
 

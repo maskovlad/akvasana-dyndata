@@ -110,7 +110,7 @@ add_action( 'wp_ajax_nopriv_feedback_action', 'ajax_action_callback' );
 add_shortcode( 'as_delivery', 'show_delivery' );
 
 /*============= REST API ===========*/
-// GET
+//  точка доступу REST API: метод GET
 add_action( 'rest_api_init', function() {
     register_rest_route( 'as/v1', 'get_data', [
         'methods' => 'GET',
@@ -118,7 +118,7 @@ add_action( 'rest_api_init', function() {
     ]);
 });
 
-// POST
+// точка доступу REST API: метод POST
 add_action( 'rest_api_init', function() {
     register_rest_route( 'as/v1', 'post_data', [
         'methods' => 'POST',
